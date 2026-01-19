@@ -1,0 +1,83 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+app.get('/user',(req,res)=>{
+    res.send('User endpoint');  
+})
+app.get('/home',(req,res)=>{
+    res.send('Home endpoint');
+})
+app.get('/about',(req,res)=>{
+    res.send('About endpoint');
+})
+app.get('/userdetail',(req,res)=>{
+    let user={
+        name:"Nupur",
+        age:22,
+        email:" sdjbgjksg@sddgfnfk"}
+     res.status(200).json(user);
+})
+app.get('/homedetail',(req,res)=>{
+    let user={
+        name:"vdfbgra",
+        add:" sdcvfv"}
+     res.status(200).json(user);
+})
+app.get('/aboutdetail',(req,res)=>{
+    let user={
+        name:"nupur",
+        age:20,
+        email:" nupur4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/persondetail',(req,res)=>{
+    let user={
+        name:"Nupur",
+        age:20,
+        email:" amitkumar4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/studentdetail',(req,res)=>{
+    let user={
+        name:"Nupur",
+        age:20,
+        email:" nupur4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/teacherdetail',(req,res)=>{
+    let user={
+        name:"nupur",
+        age:20,
+        email:" nupur4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/docdetail',(req,res)=>{
+    let user={
+        name:"nupur",
+        age:20,
+        email:" nupur4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/mydetail',(req,res)=>{
+    let user={
+        name:"nupur",
+        age:20,
+        email:" nupur02004b@gmail.com"}
+     res.status(200).json(user);
+})
+app.get('/brotherdetail',(req,res)=>{
+    let user={
+        name:"nupur",
+        age:20,
+        email:" nupur4102004b@gmail.com"}
+     res.status(200).json(user);
+})
+
+
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
