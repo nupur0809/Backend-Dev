@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Counter</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h2>Click Number to Show Images</h2>
+
+<div class="buttons">
+    <% for(let i=1;i<=6;i++){ %>
+        <a href="/?count=<%= i %>">
+            <button><%= i %></button>
+        </a>
+    <% } %>
+</div>
+
+<div class="images">
+    <% images.forEach(img => { %>
+        <img src="<%= img %>">
+    <% }) %>
+</div>
+
+</body>
+</html>
